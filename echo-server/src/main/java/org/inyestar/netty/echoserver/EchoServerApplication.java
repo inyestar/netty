@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EchoServerApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 //        SpringApplication.run(EchoServerApplication.class, args);
         if (args.length != 1) {
             System.err.printf("Usage : %s <port>", EchoServer.class.getSimpleName());
@@ -14,5 +14,4 @@ public class EchoServerApplication {
         int port = Integer.parseInt(args[0]);
         new EchoServer(port).start();
     }
-
 }

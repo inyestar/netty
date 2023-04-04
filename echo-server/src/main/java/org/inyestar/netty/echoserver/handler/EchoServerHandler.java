@@ -11,7 +11,7 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf in = (ByteBuf) msg;
-        System.out.printf("[CLIENT-%s] %s%n", ctx.channel().id(), in.toString(CharsetUtil.UTF_8));
+        System.out.printf("[SERVER-%s] %s%n", ctx.channel().id(), in.toString(CharsetUtil.UTF_8));
         ctx.write(in);
     }
 
