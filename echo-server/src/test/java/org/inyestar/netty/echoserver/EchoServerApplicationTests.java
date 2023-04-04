@@ -1,10 +1,10 @@
-package org.inyestar.netty;
+package org.inyestar.netty.echoserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NettyApplicationTests {
+class EchoServerApplicationTests {
 
     @Test
     void contextLoads() {
